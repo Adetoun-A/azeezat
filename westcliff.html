@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesomeb/fontawesome-free-6.3.0-web/css/all.css">
+    <link rel="stylesheet" href="fontawesomeb/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="westcliff3.css">
+    <link rel="stylesheet" href="entre.html">
+    <title>Document</title>
+    <style>
+
+        .slide-text{
+            display: none;
+        }
+        .sidenav {
+            height: 800px;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #146ca8;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            text-align:center;
+        }
+        .sidenav .logo2{
+            margin-left: -600px;
+        }
+        .sidenav a{
+            margin-top: 20px;
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            gap: 750px;
+            display: flex;
+            /* overflow-y: hidden; */
+
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        .sidenav a .closebtn:hover{
+            color: none;
+        }
+        .search2{
+            /* border: 1px solid #00275a; */
+            width: 720px;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        .search2 span{
+            position: absolute;
+            margin-left: 450px;
+            margin-top: -35px;
+            background:  #00275a;
+            height: 35px;
+            /* width: 1000px; */
+        }
+        .plus{
+            font-size: 20px;
+            /* color: #ddd; */
+            float: right;
+            /* margin-top: -20px; */
+            transition: all 1s;
+            /* background-color: #565656; */
+            /* font: bold 48px 'Futura'; */
+            color: transparent;
+            text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+
+        }
+        .search2 span .fa-magnifying-glass{
+            /* font-size: 70px; */
+            margin-top: 10px;
+            color: #fff;
+            width: 40px;
+        }
+        input[type=search]{
+            width: 850px;
+            height: 35px;
+        }
+        @media screen and (max-height:450px) {
+            .sidenav{
+                padding-top: 15px;
+            }
+            .sidenav a{
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="westcliff-site">
+       <div class="slide-text">
+            <div id="mySideNav" class="sidenav">
+                <div class="slidenav3">
+                    <ul>
+                        <li>APPLY NOW  <i class="fa-solid fa-chevron-right"></i></li>
+                        <li>LEARN MORE  <i class="fa-solid fa-chevron-right"></i></li>
+                        <li>CONTACT US  <i class="fa-solid fa-chevron-right"></i></li>
+                    </ul>
+                </div>
+                <div class="logo2">
+                    <img src="img/logo-westcliff.webp" alt="">
+                </div>
+                <div class="search2">
+                    <input type="search" placeholder="search">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+                <a href="javascript:avoid(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About <span class="plus"><i class="fa-solid fa-chevron-down"></i></span></a>
+                <a href="#">Services <span class="plus"><i class="fa-solid fa-chevron-down"></i></span></a>
+                <a href="#">Clients <span class="plus"><i class="fa-solid fa-chevron-down"></i></span></a>
+                <a href="#">Portfolio <span class="plus"><i class="fa-solid fa-chevron-down"></i></span></a>
+                <a href="#">Contact <span class="plus"><i class="fa-solid fa-chevron-down"></i></span></a>
+            </div>
+            <div class="slidenav4">
+                <ul>
+                    <li>APPLY NOW  <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>LEARN MORE  <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>CONTACT US  <i class="fa-solid fa-chevron-right"></i></li>
+                </ul>
+            </div>
+            <div class="slide-text2">
+                <div class="logo2">
+                    <img src="img/logo-westcliff.webp" alt="">
+                </div>
+                <span style="font-size:2rem; cursor: pointer;" onclick="openNav()">&#9776;</span>
+            </div>
+            <video src="img/2022-Commercial-Why-Westcliff.mp4" width="100%" autoplay loop muted></video>
+        </div>
+        <div id="wrapper">
+            <header>
+                <div class="container">
+                    <div class="nav">
+                        <ul>
+                            <li class="dropdown"><a href="#">Student</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown two"><a href="#">Current Students</a>
+                                        <ul class="dropdown-menu-2">
+                                            <li><a href="#">MYWU GAP</a></li>
+                                            <li><a href="#">Student Information System</a></li>
+                                            <li><a href="#">WU Email</a></li>
+                                            <li><a href="#">Interstride</a></li>
+                                            <li><a href="#">Academic Year Calendar</a></li>
+                                            <li><a href="#">University Events Calendar</a></li>
+                                            <li><a href="#">Catalog & Studnt Handbook</a></li>
+                                            <li><a href="#">Technology Services</a></li>
+                                            <li><a href="#">Registrar and Transcript</a></li>
+                                            <li><a href="#">Make A Payment</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown three"><a href="#">Future Students</a>
+                                        <ul class="dropdown-menu-3">
+                                            <li><a href="#">Apply Now</a></li>
+                                            <li><a href="#">Enrollment Forms</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="#">Make a Payment</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown four"><a href="#">Alumni Affairs</a>
+                                        <ul class="dropdown-menu-4">
+                                            <li><a href="#">Interstride</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown2"><a href="#">Faculty</a>
+                                <ul class="dropdown-menu2">
+                                    <li><a href="#">Faculty Senate</a></li>
+                                    <li><a href="#">Faculty Directory</a></li>
+                                    <li><a href="#">Portal</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown3"><a href="#">Resources</a>
+                                <ul class="dropdown-menu3">
+                                    <li><a href="#">Writing Center</a></li>
+                                    <li><a href="#">Symposium Of Academics Reserach (SOAR)</a></li>
+                                    <li><a href="#">WU News</a></li>
+                                    <li><a href="#">Library & Digital Resources Center</a></li>
+                                    <li><a href="#">Tech Support</a></li>
+                                    <li><a href="#">Registrar</a></li>
+                                    <li><a href="#">WIJAR Journal</a></li>
+                                    <li><a href="#">Westcliff Enterpreneurship (W.E.):Business Center for Women</a></li>
+                                    <li><a href="#">LITE Center</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown4"><a href="#">Innovation Hub</a>
+                                <ul class="dropdown-menu4">
+                                    <li><a href="entre.html">Enterpreneurship Center</a></li>
+                                    <li><a href="#">Technology Center</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">APPLY NOW  <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a href="#">LEARN MORE <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a href="#">CONTACT US <i class="fa-solid fa-chevron-right"></i></a></li>
+                        </ul>
+                    </div>                
+                    <div>
+                        <ul id="searchBar">
+                              search <i class="fas fa-search"></i>
+                        </ul>
+                    </div>
+                </div>
+                <div id="modal">
+                    <div class="search">
+                        <i class="fas fa-search"></i> <input type="text" placeholder="search">
+                    </div>
+                    <div id="close">
+                        &times; 
+                    </div>
+                </div>
+            </header>
+            <div class="bottomHeader">
+                <div class="container">
+                    <div class="logo">
+                        <img src="img/logo-westcliff.webp" alt="">
+    
+                    </div>
+                    <div class="header-text">
+                        <ul class="header-dropdown">
+                            <li class="about-dropdown">
+                                <i class="fas fa-circle-exclamation"></i>
+                                <p>About Westcliff</p>
+                                <ul class="about-dropdown2">
+                                    <li class="dropdown ten">
+                                        <ul class="dropdown-menu-10">
+                                            <li>Office of the President</li>
+                                            <li>Our Vission, Mission & Value</li>
+                                            <li>Accreditation Approval</li>
+                                            <li>Awards and Recognistion</li>
+                                            <li>Students and Success</li>
+                                            <li>Campus Location</li>
+                                            <li>Social Responsibility</li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown five">
+                                        <ul class="dropdown-menu-11">
+                                            <li>Leadership</li>
+                                            <li>Fast Fact</li>
+                                            <li>Faculty Directory</li>
+                                            <li>Department of Institutional Research</li>
+                                            <li>Educational Partnership</li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown six">
+                                        <ul class="dropdown-menu-12">
+                                            <li><img src="img/About-Westcliff-Menu-Optimized.webp" alt=""></li>
+                                            <p>Westcliff University welcomes you to become a part of our mission, to share our vision, and to learn through endless innovation.</p>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="about-dropdown-2">
+                                <i class="fas fa-graduation-cap"></i>
+                                <p>Academics</p>
+                                <ul class="about-dropdown-menu-2">
+                                    <li class="dropdown tens">
+                                        <ul class="dropdown-menu-20">
+                                            <li>Office of the President</li>
+                                            <li>Our Vission, Mission & Value</li>
+                                            <li>Accreditation Approval</li>
+                                            <li>Awards and Recognistion</li>
+                                            <li>Stdents and Success</li>
+                                            <li>Campus Location</li>
+                                            <li>Social Responsibility</li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown fives">
+                                        <ul class="dropdown-menu-21">
+                                            <li>Leadership</li>
+                                            <li>Fast Fact</li>
+                                            <li>Faculty Directory</li>
+                                            <li>Department of Institutional Research</li>
+                                            <li>Educational Partnership</li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown sixs">
+                                        <ul class="dropdown-menu-22">
+                                            <li><img src="img/Academics-menu-optimized.webp" alt=""></li>
+                                            <p>Westcliff University welcomes you to become a part of our mission, to share our vision, and to learn through endless innovation.</p>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="about-dropdown-3">
+                                <i class="fas fa-table-list"></i>
+                                <p>Admission</p>
+                                <ul class="about-dropdown-menu-3">
+                                    <li class="dropdown tenss">
+                                        <ul class="dropdown-menu-30">
+                                            <li>Office of the President</li>
+                                            <li>Our Vission, Mission & Value</li>
+                                            <li>Accreditation Approval</li>
+                                            <li>Awards and Recognistion</li>
+                                            <li>Stdents and Success</li>
+                                            <li>Campus Location</li>
+                                            <li>Social Responsibility</li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown fivess">
+                                        <ul class="dropdown-menu-31">
+                                            <li>Leadership</li>
+                                            <li>Fast Fact</li>
+                                            <li>Faculty Directory</li>
+                                            <li>Department of Institutional Research</li>
+                                            <li>Educational Partnership</li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown sixss">
+                                        <ul class="dropdown-menu-32">
+                                            <li><img src="img/Admissions-menu-optimized.webp" alt=""></li>
+                                            <p>Westcliff University welcomes you to become a part of our mission, to share our vision, and to learn through endless innovation.</p>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="about-dropdown-4">
+                                <i class="fa-solid fa-calculator"></i>
+                                <p>Finacial Aid</p>
+                                <ul class="about-dropdown-menu-4">
+                                    <li class="dropdown tensss">
+                                        <ul class="dropdown-menu-40">
+                                            <li>Office of the President</li>
+                                            <li>Our Vission, Mission & Value</li>
+                                            <li>Accreditation Approval</li>
+                                            <li>Awards and Recognistion</li>
+                                            <li>Stdents and Success</li>
+                                            <li>Campus Location</li>
+                                            <li>Social Responsibility</li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown fivesss">
+                                        <ul class="dropdown-menu-41">
+                                            <li>Leadership</li>
+                                            <li>Fast Fact</li>
+                                            <li>Faculty Directory</li>
+                                            <li>Department of Institutional Research</li>
+                                            <li>Educational Partnership</li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown sixsss">
+                                        <ul class="dropdown-menu-42">
+                                            <li><img src="img/Financial-Aid-menu-optimized.webp" alt=""></li>
+                                            <p>Westcliff University welcomes you to become a part of our mission, to share our vision, and to learn through endless innovation.</p>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="about-dropdown-5">
+                                <i class="fa-solid fa-map-location"></i>
+                                <p>Life at Westcliff</p>
+                                <ul class="about-dropdown-menu-5">
+                                    <li class="dropdown tenssss">
+                                        <ul class="dropdown-menu-40">
+                                            <li>Office of the President</li>
+                                            <li>Our Vission, Mission & Value</li>
+                                            <li>Accreditation Approval</li>
+                                            <li>Awards and Recognistion</li>
+                                            <li>Stdents and Success</li>
+                                            <li>Campus Location</li>
+                                            <li>Social Responsibility</li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown fivessss">
+                                        <ul class="dropdown-menu-51">
+                                            <li>Leadership</li>
+                                            <li>Fast Fact</li>
+                                            <li>Faculty Directory</li>
+                                            <li>Department of Institutional Research</li>
+                                            <li>Educational Partnership</li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown sixssss">
+                                        <ul class="dropdown-menu-52">
+                                            <li><img src="img/Life-at-Westcliff-menu-optimized.webp" alt=""></li>
+                                            <p>Westcliff University welcomes you to become a part of our mission, to share our vision, and to learn through endless innovation.</p>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="athletics">
+                                <i class="fa-solid fa-person-running"></i>
+                                <p>Athletics</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slideshow-container">
+                <video src="img/2022-Commercial-Why-Westcliff.mp4" width="100%" autoplay loop muted></video>
+            </div>
+            <section>
+                <div class="earn">
+                    Earn your BA, MBA, DBA, EdD, STEM, TESOL or Law Degree
+                </div>
+                <div class="line"></div>
+    
+                <div class="earn2">
+                    Earn an affordable private education online or on-campus
+                </div>
+            </section>
+    
+            <div class="container2">
+                <div class="grid">
+                    <div class="col-md-5 grid2">
+                        <div class="grid-img">
+                            <img src="img/Homepage-College-of-Business (1).webp" alt="">
+                        </div>
+                        <div class="grid-text">
+                            <p>College Of Business</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="grid-img">
+                            <img src="img/College-of-Education-home-optimized.webp" alt="">
+                        </div>
+                        <div class="grid-text">
+                            <p>College Of Education</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="col-md-5">
+                        <div class="grid-img">
+                            <img src="img/Homepage-college-of-technology-and-engeineering-image.webp" alt="">
+                        </div>
+                        <div class="grid-text2">
+                            <p>College of Technology and Engineering</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-5">
+                        <div class="grid-img">
+                            <img src="img/College-of-Law-home-optimized.webp" alt="">
+                        </div>
+                        <div class="grid-text">
+                            <p>College of Law</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fact">
+                <div class="container2">
+                    <div class="fact-text">
+                        <h3>Westcliff Fast Facts</h3>
+                        <div class="line2"></div>
+                        <p>Westcliff University’s primary goal is to support the integration of classroom instruction into the real<br> world of business, STEM, and education. Students at Westcliff University learn from professors working<br> in the field, providing a special opportunity to learn from enlightened and practical instructors.</p>
+                    </div>
+                    <div class="fact-Text">
+                        <div class="fact-text2">
+                            <h3>4033</h3>
+                           <div class="text-1">
+                                <p>2021 Enrollment</p>
+                           </div>
+                           <div class="text-2">
+                                <p>23% growth rate *</p>
+                            </div>
+                        </div>
+                        <div class="fact-text2">
+                            <img src="img/fact-icon-2.webp" width="100%" alt="">
+                            <div class="text-1">
+                                <p>14:1 Student to Faculty</p>
+                            </div>
+                           <div class="text-2">
+                                <p>(National Avg: 18:1) **</p>
+                            </div>
+                        </div>
+                        <div class="fact-text2">
+                            <div class="fact-text-img">
+                                <img src="img/fact-icon-3.webp" alt="">
+                            </div>
+                            <div class="text-1">
+                                <p>98 Coudreegrerwfe3rfede4t3rentries Represented</p>
+                            </div>
+                            <div class="text-2">
+                                <p>by Students ***</p>
+                            </div>
+                        </div>
+                        <div class="fact-text2">
+                            <img src="img/fact-icon-4.webp" alt="">
+                            <div class="text-1">
+                                <p>79% 2020 Graduation Rate</p>
+                            </div>
+                            <div class="text-2">
+                                <p>(National Avg: 64%) ****</p>
+                            </div>
+                        </div>
+                        <div class="fact-text2">
+                            <h3>80%</h3>
+                            <div class="text-1">
+                                <p>2020 Retention Rate</p>
+                            </div>
+                            <div class="text-2">
+                                <p>(National Avg: 62%) *****</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fact2">
+                        <p>*This is a Westcliff University internal number <a href="#">. Click here for information about Westcliff University's demographic information and student outcomes. **Click here to access the student to faculty national <br>average information. ***Click here to view the 2022 Times Higher Education Impact Rankings. ****Click here for national undergraduate graduation rates.</a> *****This is a Westcliff University internal number.<br> <a href="#">Click here to view the student satisfaction report.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="why">
+                <div class="container2">
+                    <div class="why-text">
+                        <h3>Why Westcliff?</h3>
+                        <div class="line3"></div>
+                    </div>
+                    <div class="why-text2">
+                        <div class="why-text-3-img">
+                            <img src="img/Westcliff-Shild.png" width="100%" alt="">
+                        </div>
+                        <div class="why-text-2">
+                            <div class="why-text-2-2">
+                                <div class="why-text-2-3">
+                                    <h3>Accreditation</h3><i class="fas fa-accredition"></i>
+                                    <p>Westcliff University is regionally accredited by <br>the WASC Senior College and University <br>Commission (WSCUC) and globally accredited<br> by the Accreditation Council for Business<br> Schools and Programs (ACBSP).</p>
+                                </div>
+                                <div class="why-text-2-3-img">
+                                    <!-- <img src="img/Accreditation.png" alt=""> -->
+                                    <img src="img/Accreditation.png" width="100%" alt="">
+                                </div>
+                            </div>
+                            <div class="why-text-2-2">
+                                <div class="why-text-2-3">
+                                    <h3>Academics</h3>
+                                    <p>Our curriculum is designed to prepare students <br>with the practical and theoretical elements<br> required in the job market today.</p>
+                                </div>
+                                <div class="why-text-2-3-img">
+                                    <img src="img/Academics.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="why-text-2-img">
+                            <img src="img/Westcliff-Shild.png" alt="">
+                        </div>
+                        <div class="why-text-7">
+                            <div class="why-text-2-4">
+                                <div class="why-text-2-5-img">
+                                    <img src="img/Affordable-Tuition.png" alt="">
+                                </div>
+                                <div class="why-text-2-6">
+                                    <h3>Affordable Tuition</h3>
+                                    <p>Westcliff University is regionally accredited by <br>the WASC Senior College and University <br>Commission (WSCUC) and globally accredited<br> by the Accreditation Council for Business<br> Schools and Programs (ACBSP).</p>
+                                </div>
+                            </div>
+                            <div class="why-text-2-4">
+                                <div class="why-text-2-5-img">
+                                    <img src="img/Dedicated-Faculty-Staff.png" alt="">
+                                </div>
+                                <div class="why-text-2-6">
+                                    <h3>Dedicated Faculty & Staff</h3>
+                                    <p>Our curriculum is designed to prepare students <br>with the practical and theoretical elements<br> required in the job market today.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="smart">
+                <div class="container2">
+                    <div class="smart-text">
+                        <h3>SMART™ MBA Consulting Capstone</h3>
+                        <div class="line4"></div>
+                    </div>
+                   <div class="smart-text1">
+                        <div class="smart-text2">
+                            <div class="smart-text3">
+                                <p>Westcliff University’s SMART™ MBA Consulting capstone <br>program enables students to be management consultants for <br>global powerhouses, regional brands, non-profits, and startups.<br> As a result, students refine communication skills and develop <br>creative thinking abilities at a pace and intensity that exceeds <br>other programs.</p>
+                            </div>
+                            <div class="smart-how">
+                                <h3>How Does It Work?</h3>
+                                <ul>
+                                    <li>Work with small student teams of no more than 5 people with support and guidance from faculty, executives, and mentors</li>
+                                    <li>Research, analyze, and develop recommendations for executives</li>
+                                    <li>Opportunity to provide results and resolutions to C-Suite executives</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="smart-img">
+                            <img src="img/westcliff-smart-mba-consulting-capstone.jpg" alt="">
+                        </div>
+                   </div>
+                   <div class="captone">
+                        <div class="col-md-6">
+                            <h4>MBA Capstone <span>Student Testimonial</span></h4>
+                            <p>“The program allows us to use what we learned in the classroom in a real-<br>life case. This was an awesome experience collaborating with an industry <br>mentor and working together as a team.”</p>
+                            <div class="col-md-6-p">
+                                <p>– Xinyu Zhou, MBA graduate</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>MBA Capstone <span>Company Testimonial</span></h4>
+                            <p>“The Westcliff students had a detailed understanding of each market and <br>comprehensive insight into what market would be best suited for <br>our company breaking into the industry.”</p>
+                            <div class="col-md-6-p">
+                                <p>– Ray Liu, CEO of Vena Vitals</p>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="consulting">
+                        <div class="consulting-text">
+                            <h4>Interested in the SMART™ MBA Consulting Capstone ?</h4>
+                        </div>
+                        <div class="consulting-btn">
+                            <div class="consulting-btn2">
+                                <p>BECOME AN MBA STUDENT</p>
+                            </div>
+                            <div class="consulting-btn2">
+                                <p>BECOME AN MBA STUDENT</p>
+                            </div>
+                            <div class="consulting-btn2">
+                                <p>BECOME AN MBA STUDENT</p>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="student">
+                    <div class="container2">
+                        <div class="student-text">
+                            <h3>Student Success Stories</h3>
+                            <div class="line"></div>
+                        </div>
+                        <div class="stories">
+                            <p>“I chose Westcliff because it gave me a second opportunity for schooling and to play the <br>sport that I love, soccer. The environment is very kind and welcoming, Financial Aid and <br>Administration really helped me out a lot in the beginning, and I just feel like home <br>here.”</p>
+                            <div class="stories2">
+                                <p>–Rebecca Gonzales, BAEd Student - 2019</p>
+                            </div>
+                        </div>
+                        <div class="stories-img">
+                            <img src="img/Rebecca-G-testimonial-optimized-WC.webp" alt="">
+                        </div>
+                        <div class="stories-btn">
+                            <p>EXPLORE BAED PROGRAM      <i class="fa-solid fa-chevron-right"></i></p>
+                        </div>
+                        <div class="stories-2">
+                            <div class="stories-3">
+                                <p>“So far, with all the other schools I’ve attended, Westcliff is a different environment <br>because there is a lot of support coming from instructors and coaches. It’s a great <br>school to attend, because as athletes we need a lot of support and guidance for our <br>athletic career. Westcliff is just good, I love it.”</p>
+                                <div class="stories-4">
+                                    <p>-Sandra Nantumbwe, BBA Student - 2019</p>
+                                </div>
+                            </div>
+                            <div class="stories-img2">
+                                <img src="img/Sandra-N-testimonial-optimized-WC2.webp" alt="">
+                            </div>
+                            <div class="stories-btn2">
+                                <p>EXPLORE BBR PROGRAM      <i class="fa-solid fa-chevron-right"></i></p>
+                            </div>
+                        </div>
+                        <div class="stories-btn3">
+                            <p>MORE SUCCESS STORIES  <i class="fa-solid fa-chevron-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container5">
+                    <div class="overlay-container">
+                        <div class="pic">
+                            <img src="img/westcliff_13.webp" alt="" width="100%">
+                            <div class="pics-texts">
+                                <h1>Undergraduate</h1>
+                            </div>
+                            <div class="overlay">
+                                <div class="pics-texts">
+                                    <h1>Undergraduate</h1>
+                                    <p>Our four-year private, accredited education is accessible and affordable to all. Set your sails and embark on your academic journey with Westcliff University</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="pic">
+                            <img src="img/westcliff_14.webp" alt="" width="100%">
+                            <div class="pics-texts">
+                                <h1>Athlete</h1>
+                            </div>
+                            <div class="overlay">
+                                <div class="pics-texts">
+                                    <h1>Athlete</h1>
+                                    <p>Become a Westcliff Warrior. Our athletic program strive to seek both competitive excellence in the athletic arena academics distinction in classroom</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="pic">
+                            <img src="img/westcliff_15.webp" alt="" width="100%">
+                            <div class="pics-texts">
+                                <h1>Graduate</h1>
+                            </div>
+                            <div class="overlay">
+                                <div class="pics-text">
+                                    <h1>Graduate</h1>
+                                    <p>Your next chapter starts here. Discover rigorous but flexible master's and doctorate degrees and certificates design for working professional</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="pic">
+                            <img src="img/westcliff_16.webp" alt="" width="100%">
+                            <div class="pics-texts">
+                                <h1>International</h1>
+                            </div>
+                            <div class="overlay">
+                                <div class="pics-text">
+                                    <h1>International</h1>
+                                    <p>Students from over 80 countries around the world have sought Westcliff's affordable, quality Education from the United States. Study online in your home country or at our campus in beautiful South Carolina</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="pic">
+                            <img src="img/westcliff_17.webp" alt="" width="100%">
+                            <div class="pics-texts">
+                                <h1>Online</h1>
+                            </div>
+                            <div class="overlay">
+                                <div class="pics-text">
+                                    <h1>Online</h1>
+                                    <p>Student can earn a Westcliff degree anywhere with an Internet connection. Live online class engaging curiculum, and remote internship opportunity for all of our degrees await in our online program</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="happenings">
+                <div class="container2">
+                    <div class="happen">
+                        <h3>What's Happening @ Westcliff</h3>
+                    </div>
+                    <div class="line2"></div>
+                    <div class="happenings-text">
+                        <div class="events">
+                            <div class="events2">
+                                <p>Events</p>
+                                <span>
+                                    <p><a href="#">VIEW ALL</a></p>
+                                </span>
+                            </div>
+                            <div class="event3">
+                                <div class="august">
+                                    <div class="august2">
+                                        <p>August</p>
+                                        <h2>20</h2>
+                                    </div>
+                                    <div class="summer">
+                                        <p>End of Summer Semester <br>Session 6</p>
+                                    </div>
+                                </div>
+                                <div class="summer2">
+                                    <p>READ MORE</p>
+                                </div>
+    
+                                <div class="break1">
+                                    <div class="break2">
+                                        <p>August</p>
+                                        <h2>21</h2>
+                                    </div>
+                                    <div class="break-text">
+                                        <p>Summer Break</p>
+                                    </div>
+                                </div>
+                                <div class="break-text-2">
+                                    <p>READ MORE</p>
+                                </div>
+    
+                                <div class="break1">
+                                    <div class="break2">
+                                        <p>September</p>
+                                        <h2>4</h2>
+                                    </div>
+                                    <div class="break-text">
+                                        <p>Labor Day</p>
+                                    </div>
+                                </div>
+                                <div class="break-text-2">
+                                    <p>READ MORE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newsworthy">
+                            <div class="newsworthy2">
+                                <p>Newsworthy</p>
+                                <span>
+                                    <p><a href="#">VIEW ALL</a></p>
+                                </span>
+                            </div>
+                            <div class="newsworthy3">
+                                <div class="newsworthy3-img">
+                                    <img src="img/westcliff-university-unlimited-possibilities-bike-camp-280x150.jpg" alt="">
+                                </div>
+                                <div class="newsworthy3-text">
+                                    <h4>Westcliff University and Unlimited Possibilities Unite for Life-Changing Bike Camp</h4>
+                                    <p>Westcliff University served as <br>the exclusive sponsor and <br>volunteer partner for the “UP <br>to Us Bike Camp,” a life-<br>changing and impactful event.<br> This weeklong camp took place <br>in Santa Ana, California, from <br>July 10-14 and welcomed 40 <br>attendees aged 8 and above, <br>including individuals with…</p>
+                                </div>
+                                <div class="newsworthy3-btn">
+                                    <p>READ MORE <i class="fa-solid fa-chevron-right"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newsworthy4">
+                            <div class="newsworthy4-img">
+                                <img src="img/Westcliff-Athletics-Reaches-New-Heights-Student-Athletes-280x150.jpeg" alt="">
+                            </div>
+                            <div class="newsworthy4-text">
+                                <h4>Westcliff Athletics Reaches New Heights</h4>
+                                <p>Westcliff University’s Athletics Department is rapidly expanding and thriving, collecting new staff, new athletes, and plenty of championships and wins along the way. With 26 sports now under its belt, including the recent addition of women’s wrestling, Westcliff Athletics is making waves in the collegiate…</p>
+                            </div>
+                            <div class="newsworthy4-btn">
+                                <p>READ MORE <i class="fa-solid fa-chevron-right"></i></p>
+                            </div>
+                        </div>
+                        <div class="facebook">
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cliff">
+                <div class="container">
+                   <div class="cliff-text">
+                        <div class="wase">
+                            <img src="img/cert-wasc.webp" alt="">
+                            <p>Westcliff University is accredited by the WASC <br>Senior College and University Commission <br>(WSCUC).</p>
+                        </div>
+                        <div class="military">
+                            <img src="img/MFS22-23_Gold_ccexpress-2.webp" alt="">
+                            <p>Military Friendly® is the standard that measures an <br>organization’s commitment, effort and success in <br>creating sustainable and meaningful benefit for the <br>military community.</p>
+                        </div>
+                        <div class="acbsp">
+                            <img src="img/ACBSP.webp" alt="">
+                            <p>Westcliff University's College of Business is globally <br>accredited by ACBSP.</p>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="container2">
+                    <div class="step2">
+                        <p>TAKE THE FIRST STEP</p>
+                        <h3>Request Information</h3>
+                    </div>
+                    <form action="" method="dialog"   onsubmit="return formValidation()">
+                       <div class="form1">
+                            <div class="first">
+                                <p>First Name*</p>
+                                <input type="fname" name="first name" id="firstName" placeholder="" value="">
+                                <span id="isfirstnameError"></span> <br>
+                            </div>
+                            <div class="last">
+                                <p>Last Name*</p>
+                                <input type="lname" name="last name" id="lastName" placeholder="" value="">
+                                <span id="islastnameError"></span> <br>
+                            </div>
+                            <div class="number">
+                                <p>Phone Number*</p>
+                                <input type="number" name="phone number" id="phone" placeholder="" value="">
+                                <span id="isnumberError"></span> <br>
+                            </div>
+                       </div>
+                        <div class="form3">
+                            <div class="mail">
+                                <p>Email Address*</p>
+                                <input type="mail" name="email" id="email" placeholder="" value="">
+                                <span id="isemailError"></span> <br>
+                            </div>
+                            <div class="student">
+                                <p>Student Type</p>
+                                <select name="studentType" id="studentType">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <p>Texting Opt-In*</p>
+                                <div class="form-group1">
+                                    <input type="radio" name="gender">
+                                    <p>Yes</p>
+                                </div>
+                                <div class="form-group2">
+                                    <input type="radio" name="gender">
+                                    <p>No</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" >
+                        </div>
+                    </form>
+                    <div class="step3">
+                        <h4>Terms & Conditions</h4>
+                        <p>By submitting this form, you are giving your express written consent without obligation for WU to contact you regarding our <br>educational programs and services using e-mail or phone including automated technology for calls to the mobile number(s) provided.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ready">
+                <div class="container">
+                    <div class="ready-text">
+                        <div class="read-text1">
+                            <p>Ready to apply? Start your application today!</p>
+                        </div>
+                        <div class="ready-btn">
+                            <p>APPLY NOW <i class="fa-solid fa-chevron-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="footer2">
+                        <div class="footer-logo">
+                            <div class="logo-img">
+                                <img src="img/logo-westcliff.webp" alt="">
+                            </div>
+                            <div class="logo-text">
+                                <div class="logo-text2">
+                                    <p>Call Now: 1-949-825-5999</p>
+                                </div>
+                                <div class="logo-text3">
+                                    <p>17877 Von Karman Ave, 4th Floor,<br>Irvine, CA 92614</p>
+                                </div>
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                        <div class="footer-admision">
+                            <h3>Admission</h3>
+                            <ul>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>  Apply</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>  Domestic Students</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>  International Students</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>  FAQs</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-financial">
+                            <h3>Finacial Aid</h3>
+                            <ul>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>   Tution & Fees</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>   Consumer Information Disclosure</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>   Net Price Calculator</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>   Paying for School</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>   Scholarship and Grants</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-academics">
+                            <h3>Academics</h3>
+                            <ul>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>  College of Business</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>  College of Education</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>  College of Law</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>     College of Technology & Engineering</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-information">
+                            <h3>Information For</h3>
+                            <ul>
+                                <li><a href="#"> <i class="fa-solid fa-chevron-right"></i> Accessibilty Statement</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>  Alumni Affairs</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>  Campus Location</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>  Educational Partnership</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>  Employment Opportunities</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>  Non-Discrimination Policy</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>  Privacy Statement</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>  Website Disclamier</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i>  BPPE Information</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="footer3">
+                <div class="container2">
+                    <div class="line"></div>
+                    <div class="footer-text1">
+                        <p>Copyright © 1993-2023 Westcliff University - All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fixed-items">
+                <div><i class="fas fa-person"></i></div>
+                <div class="fixed-box">
+                    <div class="box1"><i class="fas fa-angle-double-up"></i>&nbsp;&nbsp;<a href="#wrapper">back to top</a></div>
+                    <div class="box2"><i class="fas fa-people-group"></i>chat now!</div>
+                    <div class="box3">online - click here to get help <i class="fas fa-angle-double-up"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+   function openNav(){
+    document.getElementById("mySideNav").style.width = "100%";
+   }
+   function closeNav(){
+    document.getElementById("mySideNav").style.width = "0";
+   }
+</script>
+<script src="js/westcliff.js"></script>
+<script src="js/mixitup.min.js"></script>
+</html>

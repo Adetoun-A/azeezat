@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="pulse.css">
+  <title>Document</title>
+</head>
+<style>
+           .myslide{
+            display: none;
+        }
+        .myimg{
+            vertical-align: middle;
+            height: 440px;
+        }
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            /* box-shadow: 3px 3px 0 0px #717171; */
+        }
+        .prev{
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: #333;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 4px 0;
+            user-select: none;
+            text-decoration: none;
+        }
+        .prev:hover{
+            background-color: red;
+        }
+        .next{
+            right: 0;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: #333;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            user-select: none;
+            text-decoration: none;
+            border-radius: 3px 0 0 3px;
+        }
+        .next:hover{
+            background-color: red;
+        }
+        .dot{
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+        .caption{
+            color: #000;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        .fade{
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @keyframes fade {
+            from {opacity: .4;}
+            to {opacity: 1;}
+        }
+        @media only screen and (max-width: 300px){
+            .prev, .next,.text {font-size: 11px;}
+        }
+</style>
+<body>
+   <div id="wrapper">
+    <div class="header">
+        <div class="container">
+            <section class="logo">
+                <img src="img/logo.svg" alt="">
+            </section>
+             
+            <section class="nav">
+                <ul>
+                    <li class="dropdown">News
+                        <div class="dropdown-menu">
+                             <ul>
+                                <li><a href="">Politics</a></li>
+                                <li><a href="">Local</a></li>
+                                <li><a href="">Metro</a></li>
+                                <li><a href="">World</a></li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li class="dropdown-2">Entertainment
+                        <div class="dropdown-menu-2">
+                            <ul>
+                                <li><a href="">Celebrity</a></li>
+                                 <li><a href="">Music</a></li>
+                                <li><a href="">Movies</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="Sport">Sport</li>
+                    <li class="dropdown-3">Lifestyle
+                     <div class="dropdown-menu-3">
+                          <ul>
+                             <li><a href="">Fashion</a></li>
+                             <li><a href="">Beauty and Health</a></li>
+                             <li><a href="">Relationships & Weddings</a></li>
+                             <li><a href="">Food, Travel, Art & Culture</a></li>
+                         </ul>
+                      </div>
+                   </li>
+                   <li class="dropdown-4">Business
+                      <div class="dropdown-menu-4">
+                           <ul>
+                              <li><a href="">Domestic</a></li>
+                              <li><a href="">International</a></li>
+                           </ul>
+                      </div>
+                   </li>
+                   <li>Quizzes</li>
+                   <li>Pulse Influencer Award</li>
+                </ul>
+            </section>
+
+            <section class="Social-icon">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fas fa-magnifying-glass"></i></a>
+            </section>
+        </div>
+    </div>
+
+    <section class="showcase">
+        <h4>ADVERTISEMENT</h4>
+        <img src="img/phone.png" alt="">
+    </section>
+    <main>
+        <div class="Container">
+            <div class="main-content">
+                <div class="main">
+                    <div class="slideshow-container">
+                        <div class="slideshow-container">
+                            <div class="myslide fade" >
+                                <img src="img/pslide1.jpg" alt="" width="100%" class="myimg">
+                            <div class="caption">SNOW MOUNTAIN</div>
+                            </div>
+                            <div class="myslide fade">
+                                <img src="img/plside4.jpg" alt="" width="100%" class="myimg">
+                                <div class="caption" style="color: yellow;">FOREST</div>
+                            </div>
+                            <div class="myslide fade">
+                                <img src="img/pslide3.jpg" alt="" width="100%" class="myimg">
+                                <div class="caption" style="color: #FFF;">SPRING FALL</div>
+                            </div>
+                            <!-- <a class="prev" onclick="plusSlides(-1)">-</a>
+                            <a class="next" onclick="plusSlides(1)">+</a> -->
+                    
+                        </div>
+                        <div class="slide-text">
+                            <h4>Top 10 Afrobeat Collaboration In The First Half Of 2023</h4>
+                        </div>
+                    </div>
+                    <div class="content-main">
+                        <div class="content-text">
+                            <div class="content-img">
+                                <img src="img/news1.webp" alt="">
+                            </div>
+                            <h5>LIVE Transfer News Live:Samuel Chukweze to AC 
+                                Milan talks continue as PSG 
+                                slap $200m price tag on Mbappe 
+                            </h5>
+                        </div>
+                        <div class="content-text">
+                            <div class="content-img">
+                                <img src="img/news3.webp" alt="">
+                            </div>
+                            <h5>This quiz knows how <br> much you know <br> about Nigerians  <br> in Guiness Book of Records</h5>
+                     </div>     
+                         <div class="content-text">
+                                <div class="content-img">
+                                    <img src="img/news2.webp" alt="">
+                                </div>
+                                <h5>LIVE Transfer News <br>Live: Samuel Chukweze to <br> AC 
+                                    Milan talks continue as <br> PSG 
+                                    slap $200m price tag <br>on Mbappe 
+                                </h5>
+                         </div>
+                         <div class="ads">
+                             <h4 >ADVERTISEMENT</h4>
+                         </div>
+                         <div class="socials">
+                            <div class="facebook">
+                                <img src="img/facebook.svg" alt="" height="50px">
+                            </div>
+                            <div class="twitter">
+                                <img src="img/twitter.svg" alt="" height="50px">
+                            </div>
+                            <div class="instagram">
+                                <img src="img/instagram.svg" alt="" height="50px">
+                            </div>
+                            <div class="youtube">
+                                <img src="img/youtube.svg" alt="" height="50px">
+                            </div>
+                            <div class="tiktok">
+                                <img src="img/tiktok.svg" alt="" height="50px">
+                            </div>
+                      </div>
+                        <div class="infos">
+                            <div class="email">
+                                <div class="email-text">
+                                    <p>Our newsletter gives you access to a curated selection of the most important story daily</p>
+                                </div>
+                                <div class="email-btn">
+                                    <div class="btn-1">
+                                        <label for="Email"></label>
+                                         <input class="bnn" type="Email" placeholder="Email">
+                                         <div class="email-logo">
+                                             <i class="fa-solid fa-envelope fa-2x" style="margin-left: 15px;margin-top: -0.1px;"></i>
+                                             <p>SUBSCRIBE</p>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Active">
+                                <div class="active-text">
+                                    <p>Dont miss a thing! Get notification for important news & events right in your browser</p>
+                                </div>
+                                <div class="active-btn">
+                                    <div class="ac-btn">
+                                        <label for="notification"></label>
+                                        <button class="active-btn"><i class="fas fa-bell fa-3x" style="color: goldenrod;"></i> ACTIVATE NOTIFICATIONS </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addys">
+                            <h4>ADVERTISEMENT</h4>
+                        </div>
+                        <div class="round">
+                           <div class="rounded-img">
+                                <img src="img/round1.webp" alt=""width="100%">
+                                <div class="round-text">
+                                    <p>TEMI IWALEYE</p>
+                                    <h3>Attended the ojude <br>oba's festival <br>throught the <br>colorful lens of a<br> photographer</h3>
+                                </div>
+                           </div>
+                           <div class="rounded-img">
+                            <img src="img/round2.webp" alt=""width="100%">
+                            <div class="round-text">
+                                <p>IMA ELIJAH</p>
+                                <h3>Attended the ojude <br>oba's festival <br>throught the <br>colorful lens of a<br> photographer</h3>
+                            </div>
+                       </div>
+                       <div class="rounded-img">
+                        <img src="img/round3.webp" alt=""width="100%">
+                        <div class="round-text">
+                            <p>ANNA AJAYI</p>
+                            <h3>Attended the ojude <br>oba's festival <br>throught the <br>colorful lens of a<br> photographer</h3>
+                        </div>
+                          </div>
+                        </div>
+                        <div class="ads">
+                            <h4>ADVERTISEMENT</h4>
+                        </div>
+
+                        <div class="latest-1">
+                            <div class="late-news">
+                                <div class="late-img">
+                                    <img src="img/late1.webp" alt="">
+                                </div>
+                                <div class="late-text">
+                                    <p>Ekiti govt threatens kiss-a-thon promoters with three years jail term</p>
+                                </div>
+                            </div>
+                            <div class="late-news">
+                                <div class="late-img">
+                                    <img src="img/late4.webp" alt="">
+                                </div>
+                                 <div class="late-text">
+                                    <p>100,000 Nigerians benefit from world bank/FG appeals project-coordinator</p>
+                                 </div>
+                            </div>
+                            <div class="late-news">
+                                <div class="late-img">
+                                    <img src="img/late6.webp" alt="">
+                                </div>
+                                <div class="late-text">
+                                    <p>Senetor Yerima sees nothing wrong in marrying 14 year-old Egyptian girl</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="latest-2">
+                         <div class="late-news-2">
+                            <div class="late-img">
+                                <img src="img/late5.webp" alt="">
+                            </div>
+                            <div class="late-text">
+                                <p>Ex-Ohaneze President-generalJoe Irukwu dies at 89</p>
+                            </div>
+                         </div>
+                         <div class="late-news">
+                            <div class="late-img">
+                                <img src="img/late3.webp" alt="">
+                            </div>
+                            <div class="late-text">
+                                <p>100,000 Nigerians benefit from world bank/FG appeals project-coordinator</p></p>
+                            </div>
+                         </div>
+                         <div class="late-news">
+                            <div class="late-img">
+                                <img src="img/late2.webp" alt="">
+                            </div>
+                            <div class="late-text">
+                                <p>100,000 Nigerians benefit from world bank/FG appeals project - coordinator</p></p>
+                          </div>
+                      </div>
+                      </div>
+                        </div>
+                    </div>
+                    <div class="adddy">
+                        <h4>ADVERTISEMENT</h4>
+                    </div>
+                    <div class="main-2">
+                        <div class="main-2-img">
+                            <img src="img/main2.webp" alt="" width="100%">
+                        </div>
+                        <div class="main-box">
+                            <h5>Dabota Lawson opens up about coping with her failed marriage</h5>
+                        </div>
+                    </div>
+                    <div class="content-main">
+                        <div class="content-img">
+                            <img src="img/davido day.webp" alt="">
+                            <div class="content-text">
+                                <h5>City of huston declares july 7 as Davido day</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-main">
+                        <div class="content-img">
+                            <img src="img/content2.webp" alt="">
+                            <div class="content-text">
+                                <h5>Ronaldo or Messi? Manchester city's Haaland picks the GOAT  </h5>
+                            </div>
+                        </div>
+                    </div> <div class="content-main">
+                        <div class="content-img">
+                            <img src="img/content3.webp" alt="">
+                            <div class="content-text">
+                                <h5>This week's best celebrity pictures on instagram</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addys">
+                        <h4>ADVERTISEMENT</h4>
+                    </div>
+                    <div class="main-3">
+                        <div class="main-3-img">
+                            <img src="img/main3.webp" alt="" width="100%">
+                        </div>
+                        <div class="main-box-3">
+                            <p>LIVE Transfer News Live: De gea <br> leaves Man united after 
+                              12years,Psg announces new <br> signing 
+                               <br>
+                            </p>
+                        </div>
+                    </div> <div class="content-main">
+                        <div class="content-img">
+                            <img src="img/con1.webp" alt="">
+                            <div class="content-text">
+                                <h5>The Presidential candidate for the year 2023</h5>
+                            </div>
+                        </div>
+                    </div>
+                  </div> <div class="content-main">
+                    <div class="content-img">
+                        <img src="img/content6.webp" alt="">
+                        <div class="content-text">
+                            <h5>Aishat Alabi was the first olympic champion 2023</h5>
+                        </div>
+                    </div>
+                </div> 
+                <div class="content-main">
+                    <div class="content-img">
+                        <img src="img/content7.webp" alt="">
+                        <div class="content-text">
+                            <h5>100,000 Nigerians benefit from world bank/FG appeals project - coordinator</h5>
+                        </div>
+                    </div>
+                    <div class="addys-4">
+                        <h4>ADVERTISEMENT</h4>
+                    </div>
+                </div>
+                <div class="main-3">
+                    <div class="main-3-img">
+                        <img src="img/main4.webp" alt="" width="100%">
+                    </div>
+                    <div class="main-box-3">
+                        <p>LIVE Transfer News Live: De gea <br> leaves Man united after 
+                          12years,Psg announces new <br> signing 
+                           <br>
+                        </p>
+                    </div>
+                    <div class="content-main">
+                        <div class="content-img">
+                            <img src="img/con3.webp" alt="">
+                            <div class="content-text">
+                                <h5>Kogi state condemns <br> vandalism of SDP campaign <br> office</h5>
+                            </div>
+                        </div>
+                        <div class="content-main">
+                            <div class="content-img">
+                                <img src="img/con1.webp" alt="">
+                                <div class="content-text">
+                                    <h5>Which Presidential Candidate matches your personality</h5>
+                                </div>
+                            </div>
+                            <div class="content-main">
+                                <div class="content-img">
+                                    <img src="img/con2.webp" alt="">
+                                    <div class="content-text">
+                                        <h5>QUIZ: Only genuises can score 10/10 on this quiz</h5>
+                                    </div>
+                                </div>
+                          </div>
+                     </div>
+                </div>
+             </div>
+          </div>
+      </div>
+    </main>
+          <footer>
+            <div class="footer-cont">
+                <div class="container">
+                    <div class="foot-text">
+                        <h4>Advertise with us</h4>
+                        <p>Reach out to us at <a href="">ads@pulse.ng</a> or +2348644534346 to advertise with us. find out more about pulse's product and advertising opportunity at ads@pulse.ng</p>
+                    </div>
+                </div>
+                <div class="foot-feat">
+                    <div class="home">
+                        <h5>HOME</h5>
+                        <p>News</p>
+                        <p>Entertainment</p>
+                        <p>Lifestyle</p>
+                        <p>Sports</p>
+                        <p>Business</p>
+                        <p>Quizzes</p>
+                    </div>
+                    <div class="About">
+                        <h5>ABOUT US</h5>
+                        <p>About us</p>
+                        <p>Advertise with us</p>
+                        <p>Terms and Conditions</p>
+                        <p>Privacy Policy</p>
+                        <p>Pulse Influencer Award</p>
+                    </div>
+                    <div class="icons">
+                        <h5>SOCIAL</h5>
+                        <p><i class="fab fa-square-facebook"></i>Facebook</p>
+                        <p><i class="fab fa-square-twitter"></i>Twitter</p>
+                        <p><i class="fab fa-square-instagram"></i>Instagram</p>
+                        <p><i class="fab fa-square-youtube"></i>Youtube</p>
+                        <!-- <p><i class="fab fa-square-tiktok"></i>Tiktok</p> -->
+                        <p><i class="fas fa-square-envelope"></i>Newsletter</p>
+                    </div>
+                </div>
+            </div>
+          </footer>
+
+   </div>
+   <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("myslide");
+        for (i = 0; i  < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 5000);
+    }
+</script>
+</body>
+</html>
